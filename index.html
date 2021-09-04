@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>To Do</title>
+    <style>
+        .container{
+            width: 80%;
+            margin: 20px auto;
+            padding: 10px;
+            text-align: center;
+        }
+        h2{
+            color: #702929;
+        }
+        input[type="text"]{
+            width: 80%;
+            padding: 5px 10px;
+            margin: 10px;
+        }
+        #add{
+            padding: 5px 10px;
+            margin: 10px;
+            background-color: grey;
+            color: #FFF;
+            font-weight: bold;
+            border: none;
+            border-radius: 6px;
+        }
+        #add:hover{
+            background-color: #2196F3;
+            cursor: pointer;
+        }
+        table{
+            width: 100%;
+            margin: 10px 0;
+            padding: 10px 0;
+        }
+        th{
+            background-color: #E91E63;
+            color: #FFF;
+        } 
+        img{
+            width: 22px;
+            height: 20px;
+            cursor: pointer;
+        }
+        P{
+            border: 1px solid;
+            padding: 5px;
+            background-color: #E91E63;
+            color: #FFF;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>To Do Organizer</h2>
+        <input type="text" placeholder="Enter Task Name"/>
+        <input type="button" value="Add" id="add">
+        <table>
+            <tr>
+                <th>Done</th>
+                <th>Task</th>
+                <th>Delete</th>
+            </tr>
+        </table>
+        <p id="para">U haven't any task to show</p>
+    </div>
+
+
+    <script src="main.js"></script>
+</body>
+</html>
